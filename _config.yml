@@ -1,3 +1,8 @@
 theme: just-the-docs
 title: tm41m docs
 description: Our documentation site for open-source development
+
+logo: "/assets/images/site-logo-white-latest.png"
+favicon_ico: "/assets/images/favicon.ico"
+
+color_scheme: dark
