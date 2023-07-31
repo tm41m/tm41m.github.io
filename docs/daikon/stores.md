@@ -40,6 +40,8 @@ Returns a single store.
 GET
 {: .label .label-blue }
 
+##### Response: #####
+
 ```json
 {
     "id": "f295b713-1d6a-43fd-910d-fc35414bf58a",

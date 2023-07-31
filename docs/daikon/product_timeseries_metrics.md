@@ -5,7 +5,7 @@ parent: Daikon REST API
 nav_order: 3
 ---
 
-The suite of product metrics aggregated from listings.
+The set of product metrics aggregated from listings.
 
 <style>
 td, th {
@@ -19,7 +19,7 @@ td, th {
 Private Beta
 {: .label .label-purple }
 
-Returns a set of product metrics on given the `date` and `product_id`.
+Returns a set of product metrics given the `date` and `product_id`.
 
 | Request Parameter      | Details |
 | ----------- | ----------- |
@@ -42,6 +42,8 @@ Returns a set of product metrics on given the `date` and `product_id`.
 {: .d-inline-block }
 GET
 {: .label .label-blue }
+
+##### Response: #####
 
 ```json
 {

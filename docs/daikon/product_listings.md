@@ -43,6 +43,8 @@ Returns a single product listing.
 GET
 {: .label .label-blue }
 
+##### Response: #####
+
 ```json
 {
     "id": "f295b713-1d6a-43fd-910d-fb35414bf58a",
