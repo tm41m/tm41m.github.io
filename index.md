@@ -28,7 +28,7 @@ This crude high-level diagram illustrates how these systems interact with each o
 ![](./assets/images/sys-arch-high.png)
 
 ## Contact ##
-If you're interested in contributing, feel free check out our [github organization] or drop us a note at [contact@tm41m.com].
+If you're interested in contributing, feel free to check out our [github organization] or drop us a note at [contact@tm41m.com].
 
 ----
 [tm41m]: https://tm41m.com
