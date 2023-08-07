@@ -19,12 +19,14 @@ td, th {
 Private Beta
 {: .label .label-purple }
 
-Returns a set of product metrics given the `date` and `product_id`.
+Returns a set of product metrics given the `product_id`, `region_code`, `start_date` and `end_date`.
 
 | Request Parameter      | Details |
 | ----------- | ----------- |
 | product_id      | The product id |
-| date      | (Optional) The date to observe the metrics on. Default is the current calendar date|
+| region_code     | (Optional) The two letter internationally standardized ISO-3166-2 region code. Returns the global averages for Canada if `null`. | 
+| start_date      | The starting datestamp to observe the metrics on. |
+| end_date        | (Optional) The ending datestamp to observe the metrics on. The default is the current date. | 
 
 | Response Key      | type | Definition |
 | ----------- | ----------- |----------- |
@@ -38,7 +40,7 @@ Returns a set of product metrics given the `date` and `product_id`.
 | product_listings_rtn | int | The number of product listings retained from the previous period i.e. the listing was extracted both in the previous period and the current one |
 
 #### Example Requests ####
-`https://api.tm41m.io/v1/product-metrics/search?product_id=1&date=2023%2D06%2D11`
+`https://api.tm41m.io/v1/product-metrics/search?product_id=1&region_code=ON&start_date=2023%2D06%2D11&end_date=2023%2D06%2D11`
 {: .d-inline-block }
 GET
 {: .label .label-blue }
@@ -49,6 +51,7 @@ GET
 {
     "calendar_date": "2023-06-11",
     "product_id": 1,
+    "region_code": "ON",
     "currency": "CAD",
     "unit": "/ 1kg",
     "avg_price": 6.0424,
