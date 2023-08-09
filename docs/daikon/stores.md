@@ -35,7 +35,7 @@ Returns a single store.
 | updated_at      | timestamp | The last time the store was updated |
 
 #### Example Requests ####
-`https://api.tm41m.io/v1/stores/:id/f295b713-1d6a-43fd-910d-fc35414bf58a`
+`https://api.tm41m.com/stores/:id/f295b713-1d6a-43fd-910d-fc35414bf58a`
 {: .d-inline-block }
 GET
 {: .label .label-blue }

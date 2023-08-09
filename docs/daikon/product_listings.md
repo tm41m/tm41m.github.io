@@ -38,7 +38,7 @@ Returns a single product listing.
 | updated_at      | timestamp | The last time the product listing was updated |
 
 #### Example Requests ####
-`https://api.tm41m.io/v1/product-listings/:id/f295b713-1d6a-43fd-910d-fb35414bf58a`
+`https://api.tm41m.com/product-listings/:id/f295b713-1d6a-43fd-910d-fb35414bf58a`
 {: .d-inline-block }
 GET
 {: .label .label-blue }
