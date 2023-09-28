@@ -2,7 +2,7 @@
 layout: default
 title: statcan-food-prices/
 parent: Daikon REST API
-nav_order: 3
+nav_order: 4
 ---
 
 Food prices tracked by Statcan under table pid `1810024501` accesible directly [here](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810024501).
