@@ -2,7 +2,7 @@
 layout: default
 title: Scopuli
 nav_order: 2
-parent: How to Contribute FAQ Guidelines
+parent: Contributing
 ---
 
 # Contributing

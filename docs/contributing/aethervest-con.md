@@ -2,7 +2,7 @@
 layout: default
 title: aethervest
 nav_order: 4
-parent: How to Contribute FAQ Guidelines
+parent: Contributing
 ---
 
 ## About

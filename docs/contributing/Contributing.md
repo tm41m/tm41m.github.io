@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to Contribute FAQ Guidelines
+title: Contributing
 nav_order: 3
 has_children: true
 ---

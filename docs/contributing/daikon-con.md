@@ -2,7 +2,7 @@
 layout: default
 title: Daikon
 nav_order: 1
-parent: How to Contribute FAQ Guidelines
+parent: Contributing
 ---
 
 # daikon

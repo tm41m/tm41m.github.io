@@ -2,7 +2,7 @@
 layout: default
 title: tm41m.github.io
 nav_order: 3
-parent: How to Contribute FAQ Guidelines
+parent: Contributing
 ---
 
 # Quick Start
