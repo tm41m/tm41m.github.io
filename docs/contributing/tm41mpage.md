@@ -23,8 +23,20 @@ parent: Contributing
   4. Run `bundle exec jekyll serve` to start a local instance of the site.
 
 ### On Mac
-
-  TO-DO!!!
+  1. Install Homebrew if not already installed via `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+  2. Run `brew install chruby ruby-install xz` to install `chruby` and `ruby-install` using Homebrew
+  3. Run `ruby-install ruby 3.1.3` to install the latest version of Ruby supported by Jekyll (at the time of writing, this is Ruby 3.1.3)
+  4. Configure your shell to automatically use the version manager `chruby`:
+  ```
+    echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+    echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+    echo "chruby ruby-3.1.3" >> ~/.zshrc # run 'chruby' to see actual version
+  ```
+  Note: If you are using a Bash shell, replace `zshrc` with `.bash_profile` in the above commands. MacOS Catalina and later default to Zsh, but an easy way to check is to enter any nonsensical command into your terminal and read the first word of the output. For instance, entering `asdf` in Zsh will yield 
+  `zsh: asdf: command not found` and `bash: asdf: command not found` in Bash.
+  5. Quit and relaunch terminal, then run `ruby -v`. If you recieve something similar to `ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e)`, then everything is working. If not, refer to the previous step and ensure that you aligned the command with the shell you are using (Zsh or Bash)
+  6. Run `gem install jekyll` to install Jekyll as a Ruby gem 
+  7. Run `bundle exec jekyll serve` in the root of the cloned repository to start a local instance of the site
 
 ### Contact
 
