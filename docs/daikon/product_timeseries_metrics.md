@@ -64,26 +64,54 @@ GET
     "product_listings_rtn": 876
 }
 ```
-Note that many census division names include special characters such as spaces and accents. The unencoded names of such census divisions can be passed to a request as-is:<br>
+Note that many census division names include special characters such as spaces and accents. The unencoded names of such census divisions can be passed to the request as-is:<br>
 {: .d-inline-block }
 GET
 {: .label .label-blue }
-`https://api.tm41m.com/product-metrics/search?product_id=1&region_code=QC&start_date=2023-08-11&end_date=2023-08-11&census_division_name=La Côte-de-Gaspé`
-
+`https://api.tm41m.com/product-metrics/search?&start_date=2023-08-09&end_date=2023-08-11&product_id=1&region_code=NL&census_division_name=Division No. 1`
 
 ##### Response: #####
 
 ```json
-{
-    "calendar_date": "2023-08-11",
-    "product_id": 1,
-    "region_code": "QC",
-    "census_division_name": "La Côte-de-Gaspé",
-    "currency": "CAD",
-    "unit": "/ 1kg",
-    "avg_price": "---",
-    "avg_price_chng": "---",
-    "product_listings": "---",
-    "product_listings_rtn": "---"
-}
+[
+    {
+        "avg_price":"7.6900000000000000",
+        "avg_price_chng": null,
+        "calendar_date":"2023-08-09",
+        "census_division_name":"Division No.  1",
+        "currency":"CAD",
+        "md5_key":"a7bff4ad0823fa488d79404a0f2ce7b1",
+        "product_id":1,
+        "product_listings":7,
+        "product_listings_rtn": null,
+        "region_code":"NL",
+        "unit":"/ 1kg"
+    },
+    {
+        "avg_price":"7.6900000000000000",
+        "avg_price_chng": null,
+        "calendar_date":"2023-08-10",
+        "census_division_name":"Division No.  1",
+        "currency":"CAD",
+        "md5_key":"9e2a3386725eb0e3228fe5b6d83fbdad",
+        "product_id":1,
+        "product_listings":7,
+        "product_listings_rtn": null,
+        "region_code":"NL",
+        "unit":"/ 1kg"
+    },
+    {
+        "avg_price":"7.6900000000000000",
+        "avg_price_chng": null,
+        "calendar_date":"2023-08-11",
+        "census_division_name":"Division No.  1",
+        "currency":"CAD",
+        "md5_key":"c46f4099ff708d97553a5346a180476e",
+        "product_id":1,
+        "product_listings":7,
+        "product_listings_rtn": null,
+        "region_code":"NL",
+        "unit":"/ 1kg"
+    }
+]
 ```

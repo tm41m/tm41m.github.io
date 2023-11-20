@@ -5,7 +5,7 @@ parent: Daikon REST API
 nav_order: 5
 ---
 
-Census division is the general term for a Canadian geographic subregion (such as county, municipalité régionale de comté and regional district). They are typically established to facilitate the provision of public services (such as police or ambulance), but StatCan also utilizes these regions to help disseminate and organize statistical data.
+Census division is the general term for a Canadian geographic subregion (such as county, municipalité régionale de comté and regional district). They are typically established to facilitate the provision of public services (such as police or ambulance), but StatCan also utilizes these regions to help disseminate and organize statistical information.
 
 <style>
 td, th {
@@ -38,11 +38,12 @@ Returns basic attributes, such as name and type, of a given census division or a
 
 #### Example Requests ####
 <br>
-Specifying a region using the `region_code` will return all census divisions in that region.<br><br>
-`https://api.tm41m.com/census-divisions/search?region_code=ON`
+Specifying a region using the `region_code` will return all census divisions in that region.<br>
 {: .d-inline-block }
 GET
 {: .label .label-blue }
+`https://api.tm41m.com/census-divisions/search?region_code=ON`
+
 
 ##### Response: #####
 
@@ -52,7 +53,7 @@ GET
 }
 ```
 The attributes of a single census division can be observed by specifying the `census_division_name`. Special characters such as spaces and accents can be passed unencoded to the request.<br><br>
-`https://api.tm41m.com/census-divisions/search?census_division_name=La Matapédia`
+`https://api.tm41m.com/census-divisions/search?region_code=QC&census_division_name=La Matapédia`
 {: .d-inline-block }
 GET
 {: .label .label-blue }
@@ -64,18 +65,3 @@ GET
     "census_division_name": "La Matapédia"
 }
 ```
-
-A request specifying both a `region_code` and a `census_division_name` will not succeed.<br><br>
-`https://api.tm41m.com/census-divisions/search?regino_code=ON&census_division_name=Wellington`
-{: .d-inline-block }
-GET
-{: .label .label-blue }
-
-##### Response: #####
-
-```json
-{
-    "error": "invalid parameters, refer to https://tm41m.io/docs/daikon/census_divisions.html"
-}
-```
-
