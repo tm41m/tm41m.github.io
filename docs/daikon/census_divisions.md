@@ -24,15 +24,14 @@ Returns basic attributes, such as name and type, of a given census division or a
 | Request Parameter      | Details |
 | ----------- | ----------- |
 | region_code      | (Optional) The two letter internationally standardized ISO-3166-2 region code. Returns all census divisions in Canada if `null`|
-| census_division_name | (Optional) Census division name| 
+| name | (Optional) Census division name| 
 
 
 | Response Key      | type | Definition |
 | ----------- | ----------- |----------- |
-| id      | UUID | The unique 4-digit census division id (first two digits correspond to region) |
-| dguid      | string | [Dissemination Geographic Unique Identifier](https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/definition-eng.cfm?ID=geo055) |
-| census_division_name      | string | Census division name |
-| census_division_type      | string | Census division type |
+| id      | string | The unique 4-digit census division id (first two digits correspond to region) |
+| name      | string | Census division name |
+| type      | string | Census division type |
 | land_area     | numeric(32,2) | Land area of census division, in square kilometers (km<sup>2</sup>) |
 | region_code   | string | The two letter internationally standardized ISO-3166-2 region code |
 
@@ -49,7 +48,11 @@ GET
 
 ```json
 {
-    "region_code": "ON"
+    "region_code": "ON",
+    "id": "3501",
+    "type": "UC",
+    "name": "Prescott and Russell",
+    "land_area": 2004.2668
 }
 ```
 The attributes of a single census division can be observed by specifying the `census_division_name`. Special characters such as spaces and accents can be passed unencoded to the request.<br><br>
@@ -62,6 +65,10 @@ GET
 
 ```json
 {
-    "census_division_name": "La Matapédia"
+    "name": "La Matapédia",
+    "id": "2407",
+    "type": "MRC",
+    "land_area": 5354.5318,
+    "region_code": "QC"
 }
 ```

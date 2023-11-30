@@ -35,8 +35,8 @@ Returns a set of product metrics given the `product_id`, `region_code`, `census_
 | product_id      | int | The product id |
 | currency      | string | The three letter code for the price's currency |
 | unit      | string | The unit of the listing e.g. (`'/ 1kg'`, `'/ lbs'` etc.) |
-| avg_price      | numeric(32,4) | The (arithmetic) mean price of all sampled product listings on the date observed |
-| avg_price_chng      | numeric(32,4) | The (arithmetic) mean price change from the previous period where the sample is observed iff it has price information in both periods |
+| avg_price      | numeric(32,4) | The arithmetic mean price of all sampled product listings on the date observed |
+| avg_price_chng      | numeric(32,4) | The arithmetic mean price change from the previous period where the sample is observed iff it has price information in both periods |
 | product_listings      | int | The number of product listings on the date observed |
 | product_listings_rtn | int | The number of product listings retained from the previous period i.e. the listing was extracted both in the previous period and the current one |
 
