@@ -17,7 +17,7 @@ td, th {
 {: .d-inline-block }
 
 Public
-{: .label .label-purple }
+{: .label .label-green }
 
 Returns basic attributes, such as name and type, of a given census division or all census divisions within a region. 
 
