@@ -23,7 +23,7 @@ Returns basic attributes, such as name and type, of a given census division or a
 
 | Request Parameter      | Details |
 | ----------- | ----------- |
-| region_code      | (Optional) The two letter internationally standardized ISO-3166-2 region code. Returns all census divisions in Canada if `null`|
+| region_code      | The two letter internationally standardized ISO-3166-2 region code. |
 | name | (Optional) Census division name| 
 
 
@@ -55,7 +55,7 @@ GET
     "land_area": 2004.2668
 }
 ```
-The attributes of a single census division can be observed by specifying the `census_division_name`. Special characters such as spaces and accents can be passed unencoded to the request.<br><br>
+The attributes of a single census division can be observed by specifying the `name`. Special characters such as spaces and accents can be passed unencoded to the request.<br><br>
 `https://api.tm41m.com/census-divisions/search?region_code=QC&name=La Matapédia`
 {: .d-inline-block }
 GET
