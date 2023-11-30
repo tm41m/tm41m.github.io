@@ -16,7 +16,7 @@ td, th {
 ### GET /census-divisions/search ###
 {: .d-inline-block }
 
-Private Beta
+Public
 {: .label .label-purple }
 
 Returns basic attributes, such as name and type, of a given census division or all census divisions within a region. 
