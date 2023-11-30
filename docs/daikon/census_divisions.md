@@ -56,7 +56,7 @@ GET
 }
 ```
 The attributes of a single census division can be observed by specifying the `census_division_name`. Special characters such as spaces and accents can be passed unencoded to the request.<br><br>
-`https://api.tm41m.com/census-divisions/search?region_code=QC&census_division_name=La Matapédia`
+`https://api.tm41m.com/census-divisions/search?region_code=QC&name=La Matapédia`
 {: .d-inline-block }
 GET
 {: .label .label-blue }
